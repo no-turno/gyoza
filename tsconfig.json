@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "Bundler",
+    "types": [
+      "bun-types"
+    ],
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "emitBOM": true,
+    "verbatimModuleSyntax": true,
+    "strict": true,
+    "emitDeclarationOnly": true,
+    "composite": true,
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ]
+  },
+  "references": [
+    {
+      "path": "apps/web"
+    },
+    {
+      "path": "packages/gyoza"
+    }
+  ]
+}

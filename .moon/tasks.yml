@@ -7,3 +7,15 @@ fileGroups:
   sources:
     - 'src/**/*'
     - 'types/**/*'
+  tests:
+    - 'tests/**/*'
+    - '**/__tests__/**/*'
+  assets:
+    - 'assets/**/*'
+    - 'static/**/*'
+    - 'public/**/*'
+    - '**/*.{css,css.ts}'
+
+implicitInputs:
+  - "package.json"
+  - "gyoza.config.toml"

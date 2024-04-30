@@ -1,0 +1,16 @@
+type: application
+platform: bun
+language: typescript
+
+tasks:
+  dev:
+    command: 'bun run dev'
+    deps:
+      - ':tsr_watch'
+      - ':build'
+
+  build:
+    command: 'bun run build'
+
+  tsr_watch:
+    command: 'bun tsr-watch'

@@ -1,7 +1,7 @@
 import {staticPlugin} from "@elysiajs/static"
 import { Elysia } from "elysia"
 
-export default new Elysia()
+const app = new Elysia()
     .use(staticPlugin({
         assets: ".gyoza/app",
         prefix: "/app",
@@ -15,3 +15,6 @@ export default new Elysia()
     .all("/", c => {
         return Bun.file("public/index.html")
     })
+    .listen(8080)
+
+    console.log("Listening on http://localhost:8080")

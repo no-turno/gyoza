@@ -6,7 +6,9 @@
     "bun-types": "^1.1.6"
   },
   "scripts": {
-    "dev": "bun run --watch ./app.config.ts"
+    "dev": "bun run --watch ./app.config.ts",
+    "build": "bun run ./build.ts",
+    "tsr-watch": "bun tsr watch"
   },
   "overrides": {
     "@types/react": "npm:types-react@beta",

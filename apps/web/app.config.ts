@@ -1,8 +1,8 @@
 import { type Config } from "@tanstack/router-vite-plugin"
 
 const routerConfig: Partial<Config> = {
-    routesDirectory: './app/routes',
-    generatedRouteTree: './app/routeTree.gen.ts',
+    routesDirectory: './src/app/routes',
+    generatedRouteTree: './src/app/routeTree.gen.ts',
     routeFilePrefix: '+',
     routeFileIgnorePrefix: '-',
     experimental: {
@@ -13,4 +13,4 @@ const routerConfig: Partial<Config> = {
 
  await Bun.write("./tsr.config.json", JSON.stringify(routerConfig, null, 2));
 
- await Bun.$`bun --watch ./api/main.ts`
+ await Bun.$`bun --watch ./src/api/main.ts`

@@ -1,0 +1,13 @@
+node:
+  packageManager: bun
+  bun: {}
+
+bun:
+  version: '1.1.6'
+  syncProjectWorkspaceDependencies: true
+
+typescript: 
+  rootConfigFileName: tsconfig.json
+  rootOptionsConfigFileName: tsconfig.options.json
+  routeOutDirToCache: true
+  includeProjectReferenceSources: true
