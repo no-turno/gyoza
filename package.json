@@ -1,38 +1,37 @@
 {
-  "name": "gyoza",
-  "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest",
-    "bun-types": "^1.1.6"
-  },
-  "scripts": {
-    "dev": "bun run --watch ./app.config.ts"
-  },
-  "overrides": {
-    "@types/react": "npm:types-react@beta",
-    "@types/react-dom": "npm:types-react-dom@beta"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "@elysiajs/eden": "^1.0.12",
-    "@elysiajs/static": "^1.0.3",
-    "@tanstack/react-router": "^1.31.3",
-    "@tanstack/router-cli": "^1.30.0",
-    "@tanstack/router-devtools": "^1.31.3",
-    "@tanstack/router-vite-plugin": "^1.30.0",
-    "@types/eslint": "^8.56.10",
-    "@types/react": "npm:types-react@beta",
-    "@types/react-dom": "npm:types-react-dom@beta",
-    "@typescript-eslint/eslint-plugin": "^7.8.0",
-    "@typescript-eslint/parser": "^7.8.0",
-    "elysia": "^1.0.15",
-    "eslint": "^9.1.1",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "name": "gyoza",
+    "workspaces": [
+        "apps/*",
+        "packages/*",
+        "tools/*"
+    ],
+    "scripts": {
+      "dev": "bun run --watch ./app.config.ts"
+    },
+    "overrides": {
+      "@types/react": "npm:types-react@beta",
+      "@types/react-dom": "npm:types-react-dom@beta"
+    },
+    "dependencies": {
+        "@types/bun": "latest",
+        "bun-types": "^1.1.6",
+      "@elysiajs/eden": "^1.0.12",
+      "@elysiajs/static": "^1.0.3",
+      "@tanstack/react-router": "^1.31.3",
+      "@tanstack/router-cli": "^1.30.0",
+      "@tanstack/router-devtools": "^1.31.3",
+      "@tanstack/router-vite-plugin": "^1.30.0",
+      "@types/eslint": "^8.56.10",
+      "@types/react": "npm:types-react@beta",
+      "@types/react-dom": "npm:types-react-dom@beta",
+      "@typescript-eslint/eslint-plugin": "^7.8.0",
+      "@typescript-eslint/parser": "^7.8.0",
+      "elysia": "^1.0.15",
+      "eslint": "^9.1.1",
+      "eslint-plugin-import": "^2.29.1",
+      "eslint-plugin-react": "^7.34.1",
+      "eslint-plugin-react-hooks": "^4.6.2",
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1"
+    }
   }
-}

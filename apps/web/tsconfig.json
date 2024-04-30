@@ -12,12 +12,11 @@
     "composite": true,
     "baseUrl": "./",
     "paths": {
-      "app/*": ["app/*"],
-      "api/*": ["api/*"],
-      "!/*": ["types/*"]
+      "app/*": ["src/app/*"],
+      "api/*": ["src/api/*"]
     }
   },
-  "exclude": ["node_modules"],
+  "files": ["./app.config.ts"],
   "references": [
     {
       "path": "./tsconfig.api.json"
