@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "lib": ["ESNext", "DOM", "DOM.Iterable"],
+        "target": "ESNext",
+        "module": "ESNext",
+        "emitBOM": true,
+        "emitDeclarationOnly": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleDetection": "force",
+        "jsx": "react-jsx",
+        "jsxImportSource": "react",
+        "moduleResolution": "bundler",
+        "strict": true,
+        "strictNullChecks": true,
+        "composite": true,
+        "esModuleInterop": true,
+        "allowArbitraryExtensions": true,
+        "allowSyntheticDefaultImports": true,
+        "types": [
+            "bun-types",
+            "react",
+            "react-dom"
+        ]
+    },
+    "files": ["./app/main.tsx"],
+    "include": ["app/**/*.tsx", "app/**/*.ts", "app/**/*.d.ts"],
+    "exclude": [
+        "node_modules"
+    ]
+}

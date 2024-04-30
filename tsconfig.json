@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "bundler",
+    "verbatimModuleSyntax": true,
+    "strict": true,
+    "composite": true,
+    "baseUrl": "./",
+    "paths": {
+      "app/*": ["app/*"],
+      "api/*": ["api/*"],
+      "!/*": ["types/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "references": [
+    {
+      "path": "./tsconfig.api.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ]
+}
